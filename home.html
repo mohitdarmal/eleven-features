@@ -66,8 +66,9 @@
             <div class="row">
                 <div class="col-md-2 pl-0 my-auto get-feature-feather">
                     <div>
-                        <img id="feature-img" src="./img/get-feture-before.png" class="" onmouseover="getFearureHover()"
-                            onmouseout="getFeatureOut()" alt="">
+                        <img id="feature-img" src="./img/get-feture-before.png" class="cursor-pointer"
+                            onmouseover="getFearureHover()" onClick="getFearureClick()" onmouseout="getFeatureOut()"
+                            alt="">
                     </div>
 
                 </div>
@@ -105,6 +106,9 @@
                     <div class="owl-carousel owl-theme">
                         <div class="item">
                             <img src="./img/banner.png" class="" alt="...">
+                            <div>
+                                asdfsadfsadfdsaf
+                            </div>
                         </div>
                         <div class="item">
                             <img src="./img/banner.png" class="" alt="...">
@@ -127,7 +131,8 @@
 
 
                 <div class="col-md-12 pos-absolute get-feature-popup">
-                    <i class="fa fa-times float-right get-feature-hover-box-close" aria-hidden="true"></i>
+                    <i class="fa fa-times float-right get-feature-hover-box-close cursor-pointer pt-2"
+                        aria-hidden="true"></i>
                     <div class="row">
 
 
@@ -140,45 +145,33 @@
                                                 <p>
                                                     <img class=" img-fluid" src="./img/shinyangletext.jpg" alt="">
                                                 </p>
-                                                <p><img class=" img-fluid"
-                                                        src="./img/shiny-angel.jpg"
-                                                        alt="card image"></p>
-                                              
-                                                <button  class="btn btn-primary btn-lg shinny-lets-go"> Let's Go </button>
+                                                <p><img class=" img-fluid" src="./img/shiny-angel.jpg" alt="card image">
+                                                </p>
+
+                                                <a class="shinny-lets-go"> Let's Go </a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="backside">
-                                        <div class="card">
+                                        <div class="card ">
                                             <div class="px-4 mt-4">
-                                                <i class="fa fa-times float-right shiny-close-btn cursor-pointer" aria-hidden="true"></i>
-                                                <!-- <h4 class="card-title">Sunlimetech</h4> -->
-                                                <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                                <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                                <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                                <p class="card-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                                <ul class="list-inline">
-                                                    <li class="list-inline-item">
-                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                            <i class="fa fa-facebook"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                            <i class="fa fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                            <i class="fa fa-skype"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
-                                                            <i class="fa fa-google"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                                <img class=" img-fluid" src="./img/shinyangletext.jpg" alt="">
+                                                <div class="lets-go-hover">
+                                                    <i class="fa fa-times float-right shiny-close-btn cursor-pointer color-white"
+                                                        aria-hidden="true"></i>
+                                                  
+                                                    <!-- <h4 class="card-title">Sunlimetech</h4> -->
+                                                    <p class="card-text"> Get a chance to <b>get featured</b> on our
+                                                        page as an artist. </p>
+                                                    <p class="card-text"> You can actually <strong>sell your concepts,
+                                                            stories</strong> and <strong>artwork</strong> here and enjoy
+                                                        being the star of the show . </p>
+                                                    <p class="card-text"> All you have to do is send us your
+                                                        <strong>email ID</strong> so that we can send you back the
+                                                        entire process in detail. </p>
+                                                    <p class="card-text mb-0"> <strong>Email ID</strong> </p>
+                                                    <input type="text"> <input type="submit">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -186,9 +179,52 @@
                             </div>
                         </div>
 
+                        
+                        
+
                         <div class="col-md-6">
-                          
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p>
+                                                    <img class=" img-fluid" src="./img/earth-angel.jpg" alt="">
+                                                </p>
+                                                <p><img class=" img-fluid" src="./img/earth-angel-img.jpg" alt="card image">
+                                                </p>
+
+                                                <a class="shinny-lets-go"> Let's Go </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card ">
+                                            <div class="px-4 mt-4">
+                                                <img class=" img-fluid" src="./img/shinyangletext.jpg" alt="">
+                                                <div class="lets-go-hover">
+                                                    <i class="fa fa-times float-right shiny-close-btn cursor-pointer color-white"
+                                                        aria-hidden="true"></i>
+                                                  
+                                                    <!-- <h4 class="card-title">Sunlimetech</h4> -->
+                                                    <p class="card-text"> Get a chance to <b>get featured</b> on our
+                                                        page as an artist. </p>
+                                                    <p class="card-text"> You can actually <strong>sell your concepts,
+                                                            stories</strong> and <strong>artwork</strong> here and enjoy
+                                                        being the star of the show . </p>
+                                                    <p class="card-text"> All you have to do is send us your
+                                                        <strong>email ID</strong> so that we can send you back the
+                                                        entire process in detail. </p>
+                                                    <p class="card-text mb-0"> <strong>Email ID</strong> </p>
+                                                    <input type="text"> <input type="submit">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
