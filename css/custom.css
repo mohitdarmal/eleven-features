@@ -175,12 +175,17 @@ body {
     width: 100%;
 }
 
-/* .sticky-bg-img{    background-image: url(../img/banner_bottom_feather.png) !important;
+.sticky-bg-img {
+    /* background-image: url(../img/sticky-header.jpeg) !important; */
     background-repeat: no-repeat !important;
-    background-size: 50% 50% !important;} */
+    background-size: contain !important;
+    background-position: top center !important;
+    transition: all 0.5s;
+}
 
 .navigation {
     padding: 1.5rem 4rem !important;
+    transition: all 0.5s;
 }
 
 .transition-5 {
@@ -236,6 +241,19 @@ body {
 .owl-prev:focus,
 .owl-next:focus {
     outline: none !important;
+}
+
+/* .banner-section .owl-theme .owl-nav {
+    margin-top: 0px !important
+} */
+
+/* .banner-section .owl-dots{margin-top: -13px !important;} */
+.banner-txt {
+    display: inline-block;
+    background: #fff;
+    padding: 20px 80px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .owl-prev span,
@@ -294,6 +312,10 @@ body {
     padding: 100px;
 }
 
+.banner-section .item {
+    cursor: pointer;
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -326,6 +348,7 @@ body {
 .get-feature-popup-hover {
     left: 0;
     transition: 0.5s;
+
 }
 
 .get-feature-popup-hover::before {
@@ -463,9 +486,12 @@ body {
 
 .card {
     border: none;
-    
+
 }
-.backside .card {background:transparent}
+
+.backside .card {
+    background: transparent
+}
 
 .onclick-bg-color {
     background: #0e1420;
@@ -486,12 +512,40 @@ body {
     color: #fff;
 }
 
-.backside i{    position: absolute;
+.backside i {
+    position: absolute;
     right: 39px;
     margin-top: -11px;
 }
 
-.backside i:hover{    -webkit-text-stroke-width: 0.4px;
+.backside i:hover {
+    -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: white;
     text-shadow: 0 0 30px rgba(255, 255, 255, 1);
-   }
+}
+
+.banner-txt {
+    position: absolute;
+    bottom: -73px;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    transition: 0.5s;
+}
+
+.banner-tx-popup {
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    cursor: initial;
+}
+
+.heading-bg-gradient {
+    background: -webkit-linear-gradient(left, rgba(83,95,111,1) 0%, rgba(26,42,65,1) 54%, rgba(26,42,65,1) 100%);
+}
+
+.mt-80{margin-top: 80px;}
+
+.owl-theme .owl-nav .disabled{opacity: 0!important;}
+
+.book-release-carousel .card-body{padding:0px !important}
+.book-release-carousel .card{background:transparent;}
+.book-release-carousel .frontside img{margin-bottom: 15px;     box-shadow: 4px 5px 13px 4px #0000004f;}

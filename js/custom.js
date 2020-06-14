@@ -35,9 +35,11 @@ $(document).on("scroll", function () {
   if ($(document).scrollTop() > 20) {
     $(".navigation").addClass("shrink");
     $(".profile img").addClass("shrink-img");
+    $(".navigation").addClass("sticky-bg-img");
   } else {
     $(".navigation").removeClass("shrink");
     $(".profile img").removeClass("shrink-img");
+    $(".navigation").removeClass("sticky-bg-img");
   }
 });
 // sticky bavar
@@ -54,6 +56,7 @@ $(document).ready(function () {
     autoplayTimeout: 14000,
     autoplayHoverPause: true,
     nav: true,
+
   });
 
 })
@@ -66,9 +69,41 @@ var shinyCloseBtn = document.querySelector(".shiny-close-btn");
 
 
 shinnyLetsGo.addEventListener("click", () => {
-  imageFlip.classList.add("image-flip-hover")
+  imageFlip.classList.add("image-flip-hover");
 });
 
 shinyCloseBtn.addEventListener("click", () => {
-  imageFlip.classList.remove("image-flip-hover")
+  imageFlip.classList.remove("image-flip-hover");
 });
+
+
+var bannerImg = document.querySelector(".banner-img-onclick img");
+var bannerImgPopup = document.querySelector(".banner-img-onclick-show-this-popup");
+var bannerTxtCloseBtn = document.querySelector(".bannertxt-close-btn");
+
+bannerImg.addEventListener("click", () => {
+  bannerImgPopup.classList.add("banner-tx-popup");
+})
+
+bannerTxtCloseBtn.addEventListener("click", () => {
+  bannerImgPopup.classList.remove("banner-tx-popup");
+})
+
+
+
+// Owl carousel Banner
+
+$('.book-release-carousel').owlCarousel({
+  nav: true,
+  items: 4,
+
+  margin: 30,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  loop: false,
+  navRewind: false,
+  dots: false,
+
+});
+// Owl carousel Banner
