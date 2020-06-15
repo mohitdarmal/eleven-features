@@ -176,16 +176,16 @@ body {
 }
 
 .sticky-bg-img {
-    /* background-image: url(../img/sticky-header.jpeg) !important; */
+    background-image: url(../img/scroll-header-back.png) !important;
     background-repeat: no-repeat !important;
     background-size: contain !important;
     background-position: top center !important;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 }
 
 .navigation {
     padding: 1.5rem 4rem !important;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
 }
 
 .transition-5 {
@@ -227,7 +227,7 @@ body {
     transition: 0.1 s;
 }
 
-.pt-158 {
+.pt-158 { 
     padding-top: 158px;
 }
 
