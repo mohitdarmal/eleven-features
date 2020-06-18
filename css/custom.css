@@ -227,7 +227,7 @@ body {
     transition: 0.1 s;
 }
 
-.pt-158 { 
+.pt-158 {
     padding-top: 158px;
 }
 
@@ -539,13 +539,34 @@ body {
 }
 
 .heading-bg-gradient {
-    background: -webkit-linear-gradient(left, rgba(83,95,111,1) 0%, rgba(26,42,65,1) 54%, rgba(26,42,65,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(83, 95, 111, 1) 0%, rgba(26, 42, 65, 1) 54%, rgba(26, 42, 65, 1) 100%);
 }
 
-.mt-80{margin-top: 80px;}
+.mt-80 {
+    margin-top: 80px;
+}
 
-.owl-theme .owl-nav .disabled{opacity: 0!important;}
+.owl-theme .owl-nav .disabled {
+    opacity: 0 !important;
+}
 
-.book-release-carousel .card-body{padding:0px !important}
-.book-release-carousel .card{background:transparent;}
-.book-release-carousel .frontside img{margin-bottom: 15px;     box-shadow: 4px 5px 13px 4px #0000004f;}
+.book-release-carousel .card-body {
+    padding: 0px !important
+}
+
+.book-release-carousel .card {
+    background: transparent;
+}
+
+.book-release-carousel .frontside img {
+    margin-bottom: 15px;
+    box-shadow: 4px 5px 13px 4px #0000004f;
+    width: auto !important;
+    margin: 0 auto;
+}
+
+.book-release-carousel .frontside h5{
+    margin-top: 20px;
+}
+
+.card:nth-child(even){background-color: red;}

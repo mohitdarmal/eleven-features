@@ -107,3 +107,5 @@ $('.book-release-carousel').owlCarousel({
 
 });
 // Owl carousel Banner
+
+
