@@ -96,10 +96,9 @@ bannerTxtCloseBtn.addEventListener("click", () => {
 $('.book-release-carousel').owlCarousel({
   nav: true,
   items: 4,
-
   margin: 30,
   autoplay: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 50000,
   autoplayHoverPause: true,
   loop: false,
   navRewind: false,
@@ -107,5 +106,18 @@ $('.book-release-carousel').owlCarousel({
 
 });
 // Owl carousel Banner
+
+var bookReleaseCardImg = document.querySelector(".book-release-carousel .card img");
+var BookRelaseimageFlip = document.querySelector(".book-release-carousel .image-flip");
+var bookCloseBtn = document.querySelector(".book-release-carousel .book-close-btn");
+
+bookReleaseCardImg.addEventListener("click", () => {
+  BookRelaseimageFlip.classList.add("image-flip-hover");
+});
+
+bookCloseBtn.addEventListener("click", () => {
+  BookRelaseimageFlip.classList.remove("image-flip-hover");
+});
+
 
 
